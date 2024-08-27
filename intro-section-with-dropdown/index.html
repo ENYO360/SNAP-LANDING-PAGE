@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <div class="container">
+    <button class="mobile-nav-toggle" id="nav-toggle">
+      <img id="menu-icon" src="images/icon-menu.svg" alt="menu icon">
+    </button>
+    <button class="mobile-nav-toggle-close" id="nav-toggle-close">
+      <img id="menu-icon-close" src="images/icon-close-menu.svg" alt="menu icon">
+    </button>
+    <nav>
+      <img class="site-logo" src="images/logo.svg" alt="site-logo">
+      <div class="nav-links-wrapper" id="nav-wrapper">
+        <ul class="nav-list">
+          <li id="features-list">
+            <a href="#" id="features">Features<img src="images/icon-arrow-down.svg" alt="arrow-down"
+                class="icon-arrow"></a>
+            <ul id="features-dropdown">
+              <li>
+                <img src="images/icon-todo.svg" alt="to-do">
+                <a href="#">Todo List</a>
+              </li>
+              <li>
+                <img src="images/icon-calendar.svg" alt="calender">
+                <a href="#">Calender</a>
+              </li>
+              <li>
+                <img src="images/icon-reminders.svg" alt="reminder">
+                <a href="#">Reminder</a>
+              </li>
+              <li>
+                <img src="images/icon-planning.svg" alt="planning">
+                <a href="#">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li id="company-list">
+            <a href="#" id="company">Company<img src="images/icon-arrow-down.svg" alt="arrow-down"
+                class="icon-arrow"></a>
+            <ul id="company-dropdown">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="sign-up-login">
+          <button class="login">Login</button>
+          <button class="register">Register</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="section1">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="learn">Learn more</button>
+      <div class="clients">
+        <img src="images/client-databiz.svg" alt="databiz-logo">
+        <img src="images/client-audiophile.svg" alt="audiophile-logo">
+        <img src="images/client-meet.svg" alt="meet-logo">
+        <img src="images/client-maker.svg" alt="maker-logo">
+      </div>
+    </div>
+
+    <div class="hero">
+      <img id="hero-image" src="images/image-hero-desktop.png" alt="hero-image">
+      <img id="hero-image-mobile" src="images/image-hero-mobile.png" alt="">
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://twitter.com/@enyotronics">Enyotronics</a>.
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
